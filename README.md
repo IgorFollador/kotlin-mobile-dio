@@ -1,2 +1,5 @@
-# kotlin-mobile-dio
-Mobile programming with kotlin - Bootcamp Santander (DIO)
+# Mobile Programming with Kotlin 📚
+#### First contact with Android development
+#### Creating a Grade Calculator
+### Bootcamp Santander - Digital Innovation One - Mobile Developer Trail
+
