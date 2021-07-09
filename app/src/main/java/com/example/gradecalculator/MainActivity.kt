@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnCalculate = calculate
         val result = result
-        result.setTextColor(Color.RED)
+
         btnCalculate.setOnClickListener{
             val grade1 = Integer.parseInt(grade1.text.toString())
             val grade2 = Integer.parseInt(grade2.text.toString())
@@ -24,9 +24,14 @@ class MainActivity : AppCompatActivity() {
                 result.setTextColor(Color.GREEN)
             }else if(average >=7 && absences > 10)  {
                 result.setText("The student FAILED for absences!\n" + "Your average is: $average\n" + "Absences: $absences")
+                result.setTextColor(Color.RED)
             }else if(average < 7 && absences <= 10) {
                 result.setText("The student FAILED\nfor not achieving the average!\n" + "Your average is: $average\n" + "Absences: $absences")
-            }else result.setText("The student FAILED!\n" + "Your average is: $average\n" + "Absences: $absences")
+                result.setTextColor(Color.RED)
+            }else {
+                result.setText("The student FAILED!\n" + "Your average is: $average\n" + "Absences: $absences")
+                result.setTextColor(Color.RED)
+            }
         }
     }
 }
